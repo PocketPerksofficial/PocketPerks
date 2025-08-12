@@ -1,0 +1,30 @@
+{
+  "likes_tags": [
+    "family",
+    "food & drink",
+    "live music",
+    "festival",
+    "coupons",
+    "coffee",
+    "dessert"
+  ],
+  "dislike_tags": [
+    "nightclubs",
+    "expensive tastings"
+  ],
+  "max_price_usd": 50,
+  "days": [
+    "fri",
+    "sat",
+    "sun"
+  ],
+  "time_of_day": [
+    "morning",
+    "afternoon",
+    "evening"
+  ],
+  "accessibility": {
+    "wheelchair": true,
+    "outdoor_ok": true
+  }
+}

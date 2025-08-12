@@ -1,0 +1,22 @@
+{
+  "eventbrite": {
+    "enabled": false,
+    "location": {
+      "city": "Hampton",
+      "state": "VA",
+      "zip": "23666",
+      "radius_miles": 25
+    },
+    "date_window_days": 30
+  },
+  "groupon": {
+    "enabled": false,
+    "location": {
+      "city": "Hampton",
+      "state": "VA",
+      "zip": "23666",
+      "radius_miles": 25
+    },
+    "price_cap_usd": 50
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "enabled_stores": [
+    "Harris Teeter",
+    "Kroger",
+    "Food Lion",
+    "Family Dollar",
+    "Lidl",
+    "Piggly Wiggly",
+    "Aldi",
+    "Target",
+    "Walmart Neighborhood Market",
+    "BJ's",
+    "Sam's Club",
+    "Cracked Glass"
+  ],
+  "retailer_hints": {
+    "Harris Teeter": [
+      "harristeeter",
+      "e-vic",
+      "vic"
+    ],
+    "Kroger": [
+      "kroger",
+      "fuel points"
+    ],
+    "Food Lion": [
+      "foodlion",
+      "mvp"
+    ],
+    "Family Dollar": [
+      "familydollar",
+      "smart coupon"
+    ],
+    "Lidl": [
+      "lidl",
+      "lidlus",
+      "lidlusapp"
+    ],
+    "Piggly Wiggly": [
+      "piggly",
+      "pig deals"
+    ],
+    "Aldi": [
+      "aldi",
+      "aldi finds"
+    ],
+    "Target": [
+      "target.com",
+      "target",
+      "circle",
+      "target circle"
+    ],
+    "Walmart Neighborhood Market": [
+      "walmart",
+      "neighborhood market",
+      "walmart.com",
+      "wm"
+    ],
+    "BJ's": [
+      "bj's",
+      "bjs",
+      "bjs.com",
+      "wholesale"
+    ],
+    "Sam's Club": [
+      "sam's club",
+      "sams club",
+      "samsclub",
+      "scan & go"
+    ],
+    "Cracked Glass": [
+      "crackedglass",
+      "cracked glass",
+      "cg-fruit",
+      "cg"
+    ]
+  },
+  "enabled_restaurants": [
+    "McDonald's",
+    "Burger King",
+    "Wendy's",
+    "Taco Bell",
+    "Chick-fil-A",
+    "Popeyes",
+    "KFC",
+    "Sonic",
+    "Checkers/Rally's",
+    "Starbucks",
+    "Dunkin'",
+    "Panera",
+    "Chipotle",
+    "Panda Express",
+    "Domino's",
+    "Pizza Hut",
+    "Papa John's",
+    "Little Caesars",
+    "Subway",
+    "Jersey Mike's",
+    "Jimmy John's",
+    "Buffalo Wild Wings",
+    "Applebee's",
+    "Chili's",
+    "Olive Garden",
+    "Red Lobster",
+    "IHOP",
+    "Denny's",
+    "Texas Roadhouse",
+    "Outback Steakhouse",
+    "Bojangles"
+  ],
+  "restaurant_hints": {
+    "McDonald's": [
+      "mcdonalds",
+      "mcd"
+    ],
+    "Burger King": [
+      "burgerking",
+      "bk"
+    ],
+    "Wendy's": [
+      "wendys"
+    ],
+    "Taco Bell": [
+      "tacobell"
+    ],
+    "Chick-fil-A": [
+      "chick-fil-a",
+      "chickfila",
+      "cfa"
+    ],
+    "Popeyes": [
+      "popeyes"
+    ],
+    "KFC": [
+      "kfc"
+    ],
+    "Sonic": [
+      "sonicdrivein",
+      "sonic"
+    ],
+    "Checkers/Rally's": [
+      "checkers",
+      "rallys"
+    ],
+    "Starbucks": [
+      "starbucks"
+    ],
+    "Dunkin'": [
+      "dunkin",
+      "dunkindonuts"
+    ],
+    "Panera": [
+      "panerabread",
+      "panera"
+    ],
+    "Chipotle": [
+      "chipotle"
+    ],
+    "Panda Express": [
+      "pandaexpress",
+      "panda"
+    ],
+    "Domino's": [
+      "dominos"
+    ],
+    "Pizza Hut": [
+      "pizzahut"
+    ],
+    "Papa John's": [
+      "papajohns"
+    ],
+    "Little Caesars": [
+      "littlecaesars"
+    ],
+    "Subway": [
+      "subway"
+    ],
+    "Jersey Mike's": [
+      "jerseymikes"
+    ],
+    "Jimmy John's": [
+      "jimmyjohns"
+    ],
+    "Buffalo Wild Wings": [
+      "buffalowildwings",
+      "bww"
+    ],
+    "Applebee's": [
+      "applebees"
+    ],
+    "Chili's": [
+      "chilis"
+    ],
+    "Olive Garden": [
+      "olivegarden"
+    ],
+    "Red Lobster": [
+      "redlobster"
+    ],
+    "IHOP": [
+      "ihop"
+    ],
+    "Denny's": [
+      "dennys"
+    ],
+    "Texas Roadhouse": [
+      "texasroadhouse"
+    ],
+    "Outback Steakhouse": [
+      "outback"
+    ],
+    "Bojangles": [
+      "bojangles",
+      "bojangles.com"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "spreadsheet_id": "${{ secrets.SHEETS_SPREADSHEET_ID }}",
+  "service_account_json": "config/service_account.json",
+  "worksheet_tabs": {
+    "coupons": "coupons_normalized",
+    "suggestions": "suggestions",
+    "master": "master_view"
+  },
+  "overwrite_tabs": true
+}
