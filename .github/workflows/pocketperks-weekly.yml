@@ -7,7 +7,35 @@ permissions:
   contents: write
 
 jobs:
-  test:
+  run-perks:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "PocketPerks workflow is valid ✅"
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Prepare folders
+        run: |
+          mkdir -p data/inbox_html data/out
+
+      - name: Run clipper
+        run: python src/clipper.py
+
+      - name: Build master view
+        run: python src/build_master.py
+
+      - name: Commit CSV outputs back to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/out/*.csv || true
+          git commit -m "Update CSV outputs" || echo "No changes to commit"
+          git pull --rebase
+          git push
