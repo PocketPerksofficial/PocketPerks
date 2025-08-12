@@ -9,6 +9,8 @@ permissions:
 jobs:
   run-perks:
     runs-on: ubuntu-latest
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
 
@@ -16,26 +18,54 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install deps
+      - name: Install deps (verbose)
         run: |
+          set -euxo pipefail
+          python -V
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip freeze | grep -E 'beautifulsoup4|lxml|dateutil|pandas' || true
+
+      - name: Show repo layout
+        run: |
+          set -euxo pipefail
+          ls -la
+          ls -la src || true
+          ls -la data || true
+          ls -la data/out || true
+          ls -la config || true
 
       - name: Prepare folders
         run: |
+          set -euxo pipefail
           mkdir -p data/inbox_html data/out
 
-      - name: Run clipper
-        run: python src/clipper.py
+      - name: Run clipper (prints trace on failure)
+        run: |
+          set -euxo pipefail
+          python src/clipper.py
 
       - name: Run suggestions (Eventbrite/Groupon)
-        run: python src/suggest.py
+        run: |
+          set -euxo pipefail
+          python src/suggest.py
 
       - name: Build master view
-        run: python src/build_master.py
+        run: |
+          set -euxo pipefail
+          python src/build_master.py
+
+      - name: Show CSVs produced
+        run: |
+          set -euxo pipefail
+          wc -l data/out/*.csv || true
+          head -n 5 data/out/master_view.csv || true
+          head -n 5 data/out/suggestions.csv || true
+          head -n 5 data/out/coupons_normalized.csv || true
 
       - name: Commit CSV outputs back to repo
         run: |
+          set -euxo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/out/*.csv || true
