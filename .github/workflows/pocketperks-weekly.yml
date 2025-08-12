@@ -28,6 +28,9 @@ jobs:
       - name: Run clipper
         run: python src/clipper.py
 
+      - name: Run suggestions (Eventbrite/Groupon)
+        run: python src/suggest.py
+
       - name: Build master view
         run: python src/build_master.py
 
