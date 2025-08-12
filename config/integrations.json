@@ -1,6 +1,6 @@
 {
   "eventbrite": {
-    "enabled": false,
+    "enabled": true,
     "location": {
       "city": "Hampton",
       "state": "VA",
@@ -10,7 +10,7 @@
     "date_window_days": 30
   },
   "groupon": {
-    "enabled": false,
+    "enabled": true,
     "location": {
       "city": "Hampton",
       "state": "VA",
